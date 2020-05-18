@@ -1,0 +1,147 @@
+body.index{
+	margin: 0;
+	padding: 0;
+	background-image: url("../img/post.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+	font-family: sans-serif;
+
+}
+
+.login{
+	width: 320px;
+	height: 420px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+	border-radius: 20px;
+}
+
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+
+}
+
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.login input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.login input[type="text"],input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+
+}
+
+.login button[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	width: 260px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+
+
+header {
+	background: #eee;
+	overflow: auto;
+}
+
+header .appname{
+	float: left;
+}
+
+header .loggedin{
+	float: right;
+}
+
+
+/*header.php style*/
+.menu{
+	background:rgb(0,100,0);
+	text-align: center;
+	
+}
+
+.menu ul{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+
+.menu ul li{
+	width: 120px;
+	margin:15px;
+	padding: 15px;
+}
+
+
+.menu ul li:hover{
+	background:#2bab0d;
+	border-radius: 10px;
+}
+
+.menu .fa{
+	margin-right: 8px;
+}
+
+.submenu{
+	display: none;
+}
+
+.menu ul li:hover .submenu{
+	display:block;
+	position:absolute;
+	background-color:rgb(0,100,0);
+	margin-top:15px;
+	margin-left:-15px;
+}
+
+.menu ul li:hover .submenu ul{
+	display:block;
+	margin:10px;
+}
+
+.menu ul li:hover .submenu ul li{
+	width:150px;
+	padding:10px;
+	border-bottom:1px #fff;
+	background:transparent;
+	border-radius:10px;
+	text-align:left;
+
+}
+
+.menu ul li:hover .submenu ul li:last-child{
+	border-bottom: none;
+}
+
+.menu ul li:hover .submenu ul li a:hover{
+	color:#b2ff00;
+}
